@@ -1,0 +1,22 @@
+{
+  "name": "tv-search-app",
+  "description": "Webcomponent tv-search-app following open-wc recommendations",
+  "license": "MIT",
+  "author": "tv-search-app",
+  "version": "0.0.0",
+  "scripts": {
+    "analyze": "cem analyze --litelement",
+    "start": "web-dev-server"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.11",
+    "isomorphic-fetch": "^3.0.0",
+    "lit": "^2.0.2",
+    "node-html-parser": "^5.3.3"
+  },
+  "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.4.17",
+    "@web/dev-server": "^0.1.28"
+  },
+  "customElements": "custom-elements.json"
+}
