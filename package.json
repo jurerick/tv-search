@@ -10,12 +10,12 @@
     "start": "web-dev-server"
   },
   "dependencies": {
+    "@web/dev-server": "^0.1.31",
     "lit": "^2.0.2",
     "lit-element-router": "^2.0.3"
   },
   "devDependencies": {
-    "@custom-elements-manifest/analyzer": "^0.4.17",
-    "@web/dev-server": "^0.1.28"
+    "@custom-elements-manifest/analyzer": "^0.4.17"
   },
   "customElements": "custom-elements.json"
 }
