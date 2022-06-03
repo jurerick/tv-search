@@ -9,10 +9,8 @@
     "start": "web-dev-server"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.11",
-    "isomorphic-fetch": "^3.0.0",
     "lit": "^2.0.2",
-    "node-html-parser": "^5.3.3"
+    "lit-element-router": "^2.0.3"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",

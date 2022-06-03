@@ -1,4 +1,4 @@
-const TVMAZE_SEARCH_ENDPOINT = 'https://api.tvmaze.com/search/shows';
+const TVMAZE_ENDPOINT = 'https://api.tvmaze.com';
 
 function checkStatus(response) {
     if(response.status >= 200 && response.status < 300) {
@@ -17,7 +17,18 @@ function parseJson(response) {
 const TVMazeClient = {
 
     searchShows(query) {
-        return fetch(`${TVMAZE_SEARCH_ENDPOINT}?q=${query}`, {
+        return fetch(`${TVMAZE_ENDPOINT}/search/shows?q=${query}`, {
+            method: 'get',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }
+        })
+        .then(checkStatus)
+        .then(parseJson);
+    },
+
+    getShow(id) {
+        return fetch(`${TVMAZE_ENDPOINT}/shows/${id}`, {
             method: 'get',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
