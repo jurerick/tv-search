@@ -5,6 +5,7 @@
   "author": "tv-search-app",
   "version": "0.0.0",
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "analyze": "cem analyze --litelement",
     "start": "web-dev-server",
     "build": "rimraf dist && rollup -c rollup.config.js",
@@ -12,16 +13,16 @@
   },
   "dependencies": {
     "lit": "^2.0.2",
-    "lit-element-router": "^2.0.3",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.75.5"
+    "lit-element-router": "^2.0.3"
   },
   "devDependencies": {
     "@custom-elements-manifest/analyzer": "^0.4.17",
     "@open-wc/building-rollup": "^2.0.1",
     "@web/dev-server": "^0.1.31",
     "deepmerge": "^4.2.2",
-    "es-dev-server": "^2.1.0"
+    "es-dev-server": "^2.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.5"
   },
   "customElements": "custom-elements.json"
 }
